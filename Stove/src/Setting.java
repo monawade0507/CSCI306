@@ -3,9 +3,10 @@
  */
 
 /**
- * @author dwade
+ * @author Demonna Wade and Erica Manzer
  *
  */
+// enum Setting to be used for the Burner class
 public enum Setting {
 
 	OFF("---"), LOW("--+"), MEDIUM("-++"), HIGH("+++");
@@ -17,6 +18,7 @@ public enum Setting {
 		value = aVal;
 	}
 	
+	//toString function for displaying values
 	public String toString()
 	{
 		return value;

@@ -1,6 +1,12 @@
+/**
+ * @author Demonna Wade and Erica Manzer
+ *
+ */
 
+// Burner class to be used in Stove 
 public class Burner {
 
+	// enum Tempterature
 	public enum Temperature {
 		BLAZING, HOT, WARM, COLD
 	}
@@ -12,16 +18,20 @@ public class Burner {
 	} 
 
 	Setting mySetting; 
-
+	
+	// timer for "minutes"
 	int timer = 0; 
 
 	public final static int TIME_DURATION = 2;  
-
+	
+	//constructor
 	public Burner ()
 	{
 		myTemperature = Temperature.COLD;
 		mySetting = Setting.OFF;
 	}
+	
+	//plusButton function
 	public void plusButton() {
 		switch(mySetting)
 		{
@@ -39,7 +49,8 @@ public class Burner {
 
 		}
 	}
-
+	
+	//minusButton function
 	public void minusButton() {
 		switch(mySetting)
 		{
@@ -57,7 +68,8 @@ public class Burner {
 
 		}
 	}
-
+	
+	//updateTemperature function
 	public void updateTemperature() {
 
 
@@ -82,7 +94,7 @@ public class Burner {
 	}
 
 
-	
+	//display function to be used in the Stove function
 	public void display() {
 		System.out.println("[" + mySetting + "]" + "...." + myTemperature);	
 

@@ -1,3 +1,8 @@
+/**
+ * @author Demonna Wade and Erica Manzer
+ *
+ */
+
 import java.util.ArrayList;
 
 
